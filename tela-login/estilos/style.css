@@ -8,17 +8,14 @@
 }
 
 body{
-    background-color: #121214;
     font-family: "Poppins", sans-serif;
 }
 
 header{
-    background-color: #17171A;
-    padding: 30px;
+    padding: 25px;
 }
 
 .title{
-    color: #AFABB6;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -36,7 +33,6 @@ header{
 }
 
 main{
-    background-color: #121214;
     padding: 30px;
 }
 
@@ -47,9 +43,13 @@ form{
 }
 
 h2{
-    color: #AFABB6;
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.nome{
+    display: flex;
+    margin-top: 10px;
 }
 
 .email{
@@ -62,58 +62,107 @@ h2{
 }
 
 form svg{
-    fill: #AFABB6;
+    fill: black;
     height: 25px;
     margin-right: 5px;
 }
 
-.email input, .password input{
-    background-color: #121214;
-    color: #AFABB6;
+.email input, .password input, .nome input{
+    background-color: white;
+    color: #474747;
     font-weight: bold;
     font-size: 15px;
     padding: 5px;
     border: none;
-    border-bottom: 1px solid #AFABB6;
+    border-bottom: 1px solid #b1b1b1;
 }
 
 form input:focus-within{
     outline: none;
+    border-bottom: 1px solid black;
 }
 
-form a {
-    color: #FFFFFF;
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit a {
+    color: #565656;
     text-decoration: none;
     font-size: 13px;
     margin: 15px 0px;
 }
 
-.submit{
-    background-color: #AFABB6;
+.submit a:hover{
     color: #17171A;
+}
+
+.submit .acessar{
+    background-color: #012760;
+    color: white;
     font-size: 15px;
-    font-weight: bold;
-    width: 200px;
+    font-weight: normal;
+    width: 300px;
     margin-bottom: 10px;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
-form p {
-    color: #AFABB6;
-    font-weight: bold;
+.submit .acessar:hover{
+    background-color: #001738;
+}
+
+.submit .ou {
+    color: #101010;
+    font-weight: normal;
     font-size: 15px;
     margin-bottom: 10px;
 }
 
+.submit .google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D4D4D4;
+    font-size: 15px;
+    font-weight: normal;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.submit .google:hover{
+    background-color: #bbbbbb;
+}
+
+.google img{
+    width: 20px;
+    height: 20px;
+}
+
+.google p{
+    color: #101010;
+    margin-left: 10px;
+}
+
 .cadastre-se{
-    color: #AFABB6;
+    color: #101010;
     font-size: 12px;
     text-align: center;
 }
 
 .cadastre-se a{
-    color: #FFFFFF;
+    color: #565656;
+    text-decoration: none;
+}
+
+.cadastre-se a:hover{
+    color: #101010;
 }
