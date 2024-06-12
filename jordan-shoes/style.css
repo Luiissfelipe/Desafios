@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
   --brand-color: #7ca2f4;
   --dark: #121214;
   --gray: #f3f7ff;
   --white: #ffffff;
-  --font: "Archivo", sans-serif;
+  --primary-font: "Archivo", sans-serif;
+  --secondary-font: "Space Grotesk", sans-serif;
 }
 
 *{
@@ -15,15 +16,15 @@
 
 body {
   color: var(--dark);
-  font-family: var(--font);
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .cabecalho__frete-gratis{
   background-color: var(--gray);
-  font-size: 0.9rem;
   text-align: center;
   padding: 12px;
-  width: 100vw;
 }
 
 .cabecalho__conteudo{
@@ -40,7 +41,6 @@ body {
 .cabecalho__conteudo__titulo{
   color: var(--white);
   font-size: 1.6rem;
-  font-weight: 500;
   margin-bottom: 12px;
 }
 
@@ -53,9 +53,47 @@ body {
 .conteudo{
   display: flex;
   flex-direction: column;
+  gap: 40px;
   padding: 32px;
 }
 
 .conteudo__titulo{
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 12px;
+}
 
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo__texto{
+  text-align: center;
+}
+
+.container__imagem{
+  background-color: var(--gray);
+  text-align: center;
+  padding: 32.5px 47px;
+}
+
+.container__jordan{
+  margin: 24px 0;
+}
+
+.container__jordan__modelo{
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.container__jordan__marca{
+  color: var(--brand-color);
+  font-size: 1rem;
+}
+
+.container__jordan__valor{
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
 }
