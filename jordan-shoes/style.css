@@ -54,7 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 32px;
+  padding: 56px 32px;
 }
 
 .conteudo__titulo{
@@ -96,4 +96,17 @@ body {
 .container__jordan__valor{
   font-family: var(--secondary-font);
   font-size: 1.25rem;
+}
+
+@media (min-width: 769px) {
+  .conteudo{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .conteudo__apresentacao{
+    margin: 0 92px;
+  }
 }
